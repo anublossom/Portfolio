@@ -173,6 +173,7 @@ h1 {
     color: black;
     margin: 0.3;
     font-weight: 150;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 .title-text h3 {
     font-size: 50px;
@@ -368,7 +369,7 @@ background-attachment: fixed;
     text-align: left;
     padding-top: 0;  
     margin-top: 170px;            /* keeps it aligned at top */
-   text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+   
 }
 
 /* About Me box */
@@ -838,5 +839,6 @@ body, html {
 .close-btn:hover {
     color: #ff5e5e;
 }
+
 
 
