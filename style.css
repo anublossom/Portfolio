@@ -1,0 +1,838 @@
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centers whole line */
+    gap: 10px;
+}
+/* Background Image */
+.parallax {
+    height: 170vh;
+    
+    /* Multiple background images */
+    background-image: 
+        url('images/butterfly.svg'),      /* TOP layer (left image) */
+        url('images/stone1.jpg');             /* Bottom layer (main background) */
+    
+    /* Size for each image (top → bottom) */
+    background-size: 
+        300px auto,       /* left image size */
+        cover;            /* main image */
+    
+    /* Position for each image */
+    background-position: 
+        left top,      /* left image stays on left */
+        center center;    /* main background centered */
+    
+    /* Repeat or no-repeat for each layer */
+    background-repeat: 
+        no-repeat,
+        no-repeat;
+
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.parallax2 {
+    height: 120vh;
+
+     background-image: 
+        url('images/butterfly.svg'),      /* TOP layer (left image) */
+        url('images/download.jpg');  
+          /* Position for each image */
+ background-size: 
+        300px auto,       /* left image size */
+        cover;            /* main image */
+    
+          
+    background-position: 
+        left top,      /* left image stays on left */
+        center center;    /* main background centered */
+    
+   background-repeat: 
+        no-repeat,
+        no-repeat;
+    /* Position for each image */
+   background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+
+/* Glass Box */
+.content {
+     
+    padding: 40px;
+    height:130vh;
+    max-height: 500vh;
+    width: 5%;      
+    max-width: 500px;
+    margin: 40px;
+    background: rgba(248, 203, 177, 0.25); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid rgb(207, 252, 254);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+    text-align: left;    /* keeps words neat */
+    line-height: 1.8;    /* spacing between lines */
+    word-spacing: 0.1em;
+    padding: 30px;       /* fits inside box */
+    word-wrap: break-word;
+    font-size: 20px;
+    
+}
+
+/* Text inside box */
+
+/* Container for image + text */
+.content {
+    width: 300px;
+    background: rgba(248,203,177,0.25);
+    padding:25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+    backdrop-filter: blur(12px);
+}
+
+
+
+
+/* Profile photo */
+.name-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.main-wrapper {
+    display: flex;
+    justify-content: center;   /* keeps everything centered */
+    align-items: flex-start;   /* aligns top edges */
+    gap: 40px;                 /* space between left and right box */
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+
+.content p {
+    color: black;
+    margin: 10 10 10px;
+    
+}
+
+.extra-space {
+    height: 40vh;  /* change this number */
+    padding: 50px;
+    color: black;
+    background: transparent;
+}
+
+
+
+/* Text on the right of the image */
+.title-text h1 {
+    font-size: 50px;
+    color: black;
+    margin: 0;
+    font-weight: 100;
+ 
+}
+.title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    line-height: 1.4;
+}
+
+
+.title-text h4 {
+    font-size: 20px;
+    color: black;
+    margin: 0.3;
+    font-weight: 150;
+}
+.title-text h3 {
+    font-size: 50px;
+    color: black;
+    margin: 5px 0 0 0;
+    font-weight: 100;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bg.svg');
+      position: relative;
+background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    
+    
+}
+.section {
+    height: 150vh;
+    padding: 50px;        /* smaller padding */
+    margin: 40px auto;
+    width: 75%;
+ background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    border-radius: 40px;
+    border: 1px solid rgba(246, 202, 202, 0.3);
+    box-shadow: 0 10px 30px rgba(120, 210, 195, 0.3);
+
+    color: rgb(1, 35, 40);
+}
+
+.achievements-section {
+    margin: 40px;
+    padding: 30px;
+    background: rgba(4, 94, 96, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    backdrop-filter: blur(10px);
+}
+
+
+
+.job-layout {
+    display: flex;
+    flex-direction: row-reverse; /* RIGHT BOX appears on right */
+    gap: 30px;
+}
+
+/* Right side tall box */
+.job-side-box {
+    width: 30%;
+    min-height: 800px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 20px;
+}
+
+/* Job list left side */
+.job-list {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* images inside left box */
+.job-side-box img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+
+/* each job */
+.job {
+    display: flex;
+    gap: 20px;
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+
+.job-image-box {
+    width: 120px;       /* change this to resize image */
+    height: 120px;
+    min-width: 120px;   /* prevents shrinking */
+    border-radius: 10px;
+    overflow: hidden;
+}
+.job-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.job-image-box1 {
+    width: 180px;       /* change this to resize image */
+    height: 80px;
+    min-width: 120px;   /* prevents shrinking */
+    border-radius: 10px;
+    overflow: hidden;
+}
+.job-image-box1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.job-image-box2 {
+    width: 180px;       /* change this to resize image */
+    height: 70px;
+    min-width: 120px;   /* prevents shrinking */
+    border-radius: 10px;
+    overflow: hidden;
+}
+.job-image-box2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.job-text-box {
+    flex: 1;
+    line-height: 1.7;
+    
+}
+
+
+
+.side-card {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.15);   /* transparent glass box */
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-card img {
+    width: 100%;
+    border-radius: 10px;  /* optional: rounded corners */
+}
+.side-card {
+    display: flex;
+    flex-direction: column;   /* forces text to go below image */
+    align-items: center;
+    gap: 10px;                /* space between image + text */
+}
+
+.side-desc {
+    color: black;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* Main row holding all 3 blocks */
+.top-row {
+    display: flex;
+    align-items: flex-start;     /* aligns intro-box + content at the SAME TOP line */
+    justify-content: center;     /* centers the whole group in page */
+    gap: 40px;                   /* spacing between boxes */
+    margin-top: 40px;
+}
+
+/* intro-box1 (image) centered vertically with intro-box */
+.intro-box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-top: 170px;      /* centers image vertically */
+}
+
+.intro-box1 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* intro-box (Hello text) aligned at top with About Me */
+.intro-box {
+    text-align: left;
+    padding-top: 0;  
+    margin-top: 170px;            /* keeps it aligned at top */
+}
+
+/* About Me box */
+
+.text-on-top {
+    max-width: 600px;          /* controls width */
+    margin: 0 auto;            /* centers the box */
+    text-align: left;        /* center the text */
+    line-height: 1.5;          /* better spacing */
+    font-size: 18px;           
+    color: #060202;               /* optional */
+    padding: 20px;             /* optional padding */
+}
+
+.text-on-top {
+    margin-bottom: -400px; /* overlap upwards */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* === FULL ACHIEVEMENT SECTION WITH ONE BACKGROUND === */
+.achievements-full {
+    background-image: url("images/download.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 80px 0;
+    color: white;
+}
+
+/* Title */
+.achieve-title h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+
+/* Grid layout */
+.achieve-grid {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+/* Item */
+.achieve-item {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(4px);
+    text-align: center;
+    
+}
+
+.achieve-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Image text */
+.achieve-item h3 {
+    color: #ffdd99;
+    margin-bottom: 10px;
+    
+}
+
+/* Description Box (same background section) */
+.desc-box {
+    width: 65%;
+    margin: 60px auto 0;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 35px;
+    border-radius: 20px;
+    color: black;
+    backdrop-filter: blur(6px);
+    text-align: center;
+     line-height: 1.8;    /* spacing between lines */
+    word-spacing: 0.1em;
+        font-size: 20px;
+}
+
+/* ----- GENERAL SETTINGS ----- */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ----- PARALLAX BASE ----- */
+.parallax-section {
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* ----- INDIVIDUAL BACKGROUNDS ----- */
+.fs-bg {
+    background-image: url('images/124656.jpg'); /* change later */
+}
+
+.quality-bg {
+    background-image: url('images/anime-leader-girl-looking-at-sun-5k-a4.jpg');
+}
+
+.cross-bg {
+    background-image: url('images/10164086_18157187.jpg');
+}
+
+.final-bg {
+    background-image: url('images/37290394_8369135.jpg');
+}
+
+/* ----- GLASS CONTENT BOX ----- */
+.content-box {
+    background: rgba(255,255,255,0.17);
+    padding: 40px;
+    width: 70%;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Titles */
+.content-box h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.content-box h3 {
+    color: #ffddaa;
+    margin-bottom: 15px;
+}
+
+/* Text box */
+.text-box {
+    background: rgba(0,0,0,0.45);
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.8;    /* spacing between lines */
+    word-spacing: 0.1em;
+    font-size: 20px;
+    margin-top: 25px;
+    color: #fff;
+}
+
+/* Image row */
+.image-row,
+.image-triple-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+/* Items */
+.side {
+    width: 28%;
+    text-align: center;
+    color: #fff;
+}
+
+.side img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* Thank You */
+.big-thanks {
+    font-size: 4rem;
+    color: #100000;
+    text-align: center;
+}
+
+.center-box {
+    text-align: center;
+}
+
+
+
+
+
+.loop-wrapper {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-bottom: 3px solid #fff;
+  color: #fff;
+}
+.mountain {
+  position: absolute;
+  right: -900px;
+  bottom: -20px;
+  width: 2px;
+  height: 2px;
+  box-shadow: 
+    0 0 0 50px #4DB6AC,
+    60px 50px 0 70px #4DB6AC,
+    90px 90px 0 50px #6a42f9,
+    250px 250px 0 50px #4DB6AC,
+    290px 320px 0 50px #6a42f9,
+    320px 400px 0 50px #4DB6AC
+    ;
+  transform: rotate(130deg);
+  animation: mtn 20s linear infinite;
+}
+.hill {
+  position: absolute;
+  right: -900px;
+  bottom: -50px;
+  width: 400px;
+  border-radius: 50%;
+  height: 20px;
+  box-shadow: 
+    0 0 0 50px #4DB6AC,
+    -20px 0 0 20px #4DB6AC,
+    -90px 0 0 50px #6a42f9,
+    250px 0 0 50px  #4DB6AC,
+    290px 0 0 50px #4DB6AC,
+    620px 0 0 50px #6a42f9;
+  animation: hill 4s 2s linear infinite;
+}
+.tree, .tree:nth-child(2), .tree:nth-child(3) {
+  position: absolute;
+  height: 100px; 
+  width: 35px;
+  bottom: 0;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/tree.svg) no-repeat;
+}
+.rock {
+  margin-top: -17%;
+  height: 2%; 
+  width: 2%;
+  bottom: -2px;
+  border-radius: 20px;
+  position: absolute;
+  background: #ddd;
+}
+.truck, .wheels {
+  transition: all ease;
+  width: 85px;
+  margin-right: -60px;
+  bottom: 0px;
+  right: 50%;
+  position: absolute;
+  background: #eee;
+}
+.truck {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/truck.svg) no-repeat;
+  background-size: contain;
+  height: 60px;
+}
+.truck:before {
+  content: " ";
+  position: absolute;
+  width: 25px;
+  box-shadow:
+    -30px 28px 0 1.5px #fff,
+     -35px 18px 0 1.5px #fff;
+}
+.wheels {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/wheels.svg) no-repeat;
+  height: 15px;
+  margin-bottom: 0;
+}
+
+.tree  { animation: tree 3s 0.000s linear infinite; }
+.tree:nth-child(2)  { animation: tree2 2s 0.150s linear infinite; }
+.tree:nth-child(3)  { animation: tree3 8s 0.050s linear infinite; }
+.rock  { animation: rock 4s   -0.530s linear infinite; }
+.truck  { animation: truck 4s   0.080s ease infinite; }
+.wheels  { animation: truck 4s   0.001s ease infinite; }
+.truck:before { animation: wind 1.5s   0.000s ease infinite; }
+
+
+@keyframes tree {
+  0%   { transform: translate(1350px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+@keyframes tree2 {
+  0%   { transform: translate(650px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+@keyframes tree3 {
+  0%   { transform: translate(2750px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+
+@keyframes rock {
+  0%   { right: -200px; }
+  100% { right: 2000px; }
+}
+@keyframes truck {
+  0%   { }
+  6%   { transform: translateY(0px); }
+  7%   { transform: translateY(-6px); }
+  9%   { transform: translateY(0px); }
+  10%   { transform: translateY(-1px); }
+  11%   { transform: translateY(0px); }
+  100%   { }
+}
+@keyframes wind {
+  0%   {  }
+  50%   { transform: translateY(3px) }
+  100%   { }
+}
+@keyframes mtn {
+  100% {
+    transform: translateX(-2000px) rotate(130deg);
+  }
+}
+@keyframes hill {
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+
+
+/* CSS for Typing Effect */
+
+
+
+
+
+
+.corner-box {
+    position: fixed;        /* stays even when scrolling */
+    bottom: 20px;
+    right: 20px;            /* change to left:20px if needed */
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+/* Full slide section */
+.full-slide {
+    width: 100%;
+    min-height: 110vh;              /* full screen height */
+    padding: 0;
+    margin: 0;
+
+    background-image: url("images/your-section-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Border box that covers almost entire slide */
+.full-border-box {
+    width: 90%;                      /* change to 95% if you want tighter */
+    height: 90vh;                    /* covers entire area */
+    background: rgba(255,255,255,0.15);
+    border: 3px solid rgba(255,255,255,0.5);
+    border-radius: 25px;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    padding: 40px;
+    box-sizing: border-box;
+    color: black;
+}
+
+/* FULL OPAQUE SLIDE */
+.full-slide-solid {
+    width: 100%;
+    min-height: 100vh;
+
+         /* <<< change image OR color here */
+    background-image: url("images/6134885.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: 9999;           /* Always above body background */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOX INSIDE (optional) */
+.solid-inner-box {
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+
+     background: rgba(255,255,255,0.15);
+    border: 3px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Background Overlay */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Show popup */
+.popup:target {
+    display: flex;
+}
+
+/* Popup container (important!) */
+.popup-content {
+    position: relative;   /* THIS makes the close button visible */
+}
+
+/* Popup Image */
+.popup-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: -20px;      /* moves above the image */
+    right: -20px;
+    font-size: 45px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.close-btn:hover {
+    color: #ff5e5e;
+}
