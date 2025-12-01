@@ -172,11 +172,11 @@ h1 {
     font-size: 20px;
     color: black;
     margin: 0.3;
-    font-weight: 700;
+    font-weight: 500;
      text-shadow: none;
 }
 .title-text h3 {
-    font-size: 35px;
+    font-size: 30px;
     color: black;
     margin: 5px 0 0 0;
     font-weight: 400;
@@ -841,6 +841,7 @@ body, html {
 .close-btn:hover {
     color: #ff5e5e;
 }
+
 
 
 
