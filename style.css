@@ -844,32 +844,6 @@ body, html {
 
 
 
-/* Flexible containers */
-.content, .parallax, .parallax2 {
-  max-width: 100%;
-  width: 90%;
-  margin: 0 auto;
-  padding: 1rem;
-  box-sizing: border-box; /* ensures padding doesn't affect width */
-}
-
-
-/* Mobile phones */
-@media (max-width: 600px) {
-  body { font-size: 14px; }
-  .nav, .sidebar { display: none; } /* optional */
-}
-
-/* Tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-  body { font-size: 16px; }
-  .columns { flex-direction: column; } /* stack columns */
-}
-
-/* Large screens */
-@media (min-width: 1025px) {
-  body { font-size: 18px; }
-}
 
 
 
